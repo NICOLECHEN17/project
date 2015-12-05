@@ -14,6 +14,7 @@
 
     body {
       padding-top: 60px;
+      background-color:#FFCCCC
     }
 
     section {
@@ -51,7 +52,7 @@
       margin-bottom: 30px;
       text-align: center;
       font-weight: normal;
-      color: #777;
+      color: #FF8888;
     }
 
     p {
@@ -59,21 +60,29 @@
       line-height: 1.7em;
     }
 
+    .headpicture{
+     text-align:center;
+    }
+
     /* header */
+    .navbar{
+    background-color:#FFB6C1
+    }
 
     #logo {
       float: left;
       margin-right: 10px;
       font-size: 1.7em;
-      color: #fff;
+      color: #FFF;
       text-transform: uppercase;
       letter-spacing: -1px;
       padding-top: 9px;
       font-weight: bold;
+
     }
 
     #logo:hover {
-      color: #fff;
+      color: #FF8888;
       text-decoration: none;
     }
 
