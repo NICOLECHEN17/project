@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
    attr_accessor :remember_token
+   has_many :microposts, dependent: :destroy
 	before_save { self.email = email.downcase }
       validates :name, presence: true, length: { in: 9..30 }
       VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -37,5 +38,9 @@ class User < ActiveRecord::Base
        def forget
           update_attribute(:remember_digest, nil)
        end
+
+       def feed
+                Micropost.where("user_id = ?", id)
+            end
     end
        
