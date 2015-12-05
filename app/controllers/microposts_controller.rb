@@ -3,7 +3,7 @@ class MicropostsController < ApplicationController
           before_action :correct_user,   only: :destroy 
 
           def create
-        secure_post = params.require(:micropost).permit(:content)
+        secure_post = params.require(:micropost).permit(:content, :picture)
         @micropost = current_user.microposts.build(secure_post) 
         if @micropost.save
           flash[:success] = "Micropost created!"
@@ -21,9 +21,7 @@ class MicropostsController < ApplicationController
 
           private
 
-            def micropost_params
-                 params.require(:micropost).permit(:content, :picture)
-            end
+           
 
             def correct_user
               @micropost = current_user.microposts.find_by(id: params[:id])
