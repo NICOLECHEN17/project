@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
      gem 'will_paginate', '3.0.4'
+     gem 'bootstrap-will_paginate', '0.0.10'
     gem 'bcrypt',   '3.1.7'
     gem 'rails',        '4.2.2'
     gem 'carrierwave',             '0.10.0'
