@@ -19,9 +19,10 @@
     <% else %>
       <div class="headpicture">
         
-         <%= link_to image_tag("travelnotes.png", alt: "travel notes")%>
-           <%= link_to "Sign up now!", signup_path, class: "btn btn-lg" %>
+         <%= link_to image_tag("travelnotes.png", alt: "travel notes")%><br /><br />
+           <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %><br /><br />
+           <%= link_to image_tag("scenery.png", alt: "scenery")%><br /><br />
       </div>
 
-      <%= link_to image_tag("travelnote.png", alt: "Rails logo")%>
+      <%= link_to image_tag("travelnote.png", alt: "logo")%>
     <% end %>

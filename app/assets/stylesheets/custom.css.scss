@@ -66,7 +66,9 @@
 
     /* header */
     .navbar{
+    height:50px;
     background-color:#FFB6C1
+
     }
 
     #logo {
@@ -320,8 +322,16 @@
 
       .button{
       width:100px;
-      color:#FF88C2;
-      background-color:#FFD4D4
+      color:#FF8282;
+      background-color:#FFE8E8;
+      border-color: #FFE8E8;
+      
+      }
+
+      .btn{
+      color:#FF8282;
+      background-color:#FFE8E8;
+      border-color: #FFE8E8;
       }
       
    
