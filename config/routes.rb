@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   
-  
+        
          resources :relationships,       only: [:create, :destroy]
           resources :users
-          resources :microposts, only: [:create, :destroy] 
+          resources :microposts, only: [:create, :destroy] do
+                 resources :comments
+          end
           root 'static_pages#home'
 
           get 'help'    => 'static_pages#help'

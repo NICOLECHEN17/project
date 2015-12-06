@@ -9,10 +9,16 @@
       <span class="timestamp">
         Posted <%= time_ago_in_words(micropost.created_at) %> ago.
 
+       
+
         <% if current_user?(micropost.user) %>
           <%= link_to "delete", micropost, method: :delete,
                                            data: { confirm: "You sure?" } %>
         <% end %>
+
+         <p><%= link_to "comment", micropost_comments_path(micropost),class: "btn btn-sm btn-primary"%></p>
+          
+
 
       </span>
     </li>

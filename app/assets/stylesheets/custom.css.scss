@@ -289,3 +289,34 @@
     border-bottom: 1px solid $gray-lighter;
   }
 }
+
+
+
+ /* comments */
+
+    
+      
+      li {
+        padding: 10px 0;
+        border-top: 1px solid #e8e8e8;
+      }
+      .commentuser {
+        margin-top: 5em;
+        padding-top: 0;
+      }
+      .commentcontent {
+        display: block;
+        margin-left: 0px;
+        
+      }
+      .commenttimestamp {
+        color: $gray-light;
+        display: block;
+        margin-left: 0px;
+      }
+      .commenttext{width:1100px;}
+      .btn{width:100px;}
+      
+   
+
+    
