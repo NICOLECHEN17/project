@@ -7,7 +7,10 @@ Rails.application.routes.draw do
                  resources :comments
           end
           root 'static_pages#home'
-
+          get 'recommend'    => 'static_pages#recommend'
+          get 'food'    => 'static_pages#food'
+          get 'scenery'    => 'static_pages#scenery'
+          get 'news'    => 'static_pages#news'
           get 'help'    => 'static_pages#help'
           get 'about'   => 'static_pages#about'
           get 'contact' => 'static_pages#contact'
