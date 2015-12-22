@@ -5,7 +5,7 @@
 made comment <%= time_ago_in_words(comment.created_at) %> ago.
 <% if current_user?(comment.user) %>
 <%= link_to "delete", micropost_comment_path(comment.micropost,comment),
-			confirm: "You sure?",
+			data: {confirm: "You sure?"},
 			method: :delete %>
  <% end %>
 </span>
